@@ -1,2 +1,2 @@
-# https//Gostreamtv.github.io
+https//Gostreamtv.github.io
 The ultimate IPTV 
