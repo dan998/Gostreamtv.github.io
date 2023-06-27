@@ -31,7 +31,7 @@ class="top-style-button
    
    <a href="https://wa.me/message/LXB4NTXMXI77M1"><div id="myElement" class="blinking" style="color: blue;">Click here!</div></a>
    
-  <hr color="red" size="5" width="100%">
+  <hr color="red" size="5" width="200%">
   <br>
   <p>
       <h2>The Ultimate IPTV Service</h2>
@@ -46,22 +46,22 @@ class="top-style-button
  
  
   <h1>Our packages are listed below</h1>
- <button onclick="showImage()" class="button-3d">Packages</button>
+ 
 
-<img id="myImage" src="" style="display: none;">
-
+<button class="btn" onclick="toggleImage()">View Plans</button>
+  <img id="myImage" src="grim.jpg" alt="Image" class="hidden">
+  
   
    <hr color="red" size="5" width="200%">
   <br>
  
-  button>
+ 
 
  
      
 <style>
     
     body {
- background-image: url("grimboss.jpg");
  background-color: orange;
  width: 70%; height: 100px;
  
@@ -229,6 +229,28 @@ class="top-style-button
   margin-left: 10px;
 }
 
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
 
 </style>
 <script>
@@ -237,20 +259,10 @@ class="top-style-button
   dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
 }
 
-document.getElementById('myElement').addEventListener('touchstart', function(event) {
-  event.target.classList.toggle('blinkin"blooalse;
+function toggleImage() {
+  var img = document.getElementById("myImage");
+  img.classList.toggle("hidden");
 }
-
-function showPopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "block";
-}
-
-function closePopup() {
-  var popup = document.getElementById("popup");
-  popup.style.display = "none";
-}
-
 
 </script>
 
