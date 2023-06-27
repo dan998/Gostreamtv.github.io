@@ -22,7 +22,7 @@
 </div>
 <p class="p-outside">|</p> <button
 class="top-style-button
- onclick="showsell()">Links</button>
+ onclick="showsell()">Apk Links</button>
  </div>
  <br>
  <body>
@@ -55,14 +55,16 @@ class="top-style-button
    <hr color="red" size="5" width="100%">
   <br>
  
- 
+     <h2>Offer's for you</h2>
+     
+     <div class="slideshow-container"> <div class="slide"> <a href="#"> <img src="freetrial.jpg" alt="Image 1"> </a> </div> <div class="slide"> <a href="#"> <img src="Fullpackage.jpg" alt="Image 2"> </a> </div> <div class="slide"> <a href="#"> <img src="Contact.jpg" alt="Image 3"> </a> </div> </div>
 
  
      
 <style>
     
     body {
- background-color: orange;
+ background-color: purple;
  width: 70%; height: 100px;
  
 }
@@ -251,6 +253,29 @@ img {
   height: auto;
 }
 
+.slideshow-container {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    /* Style for the individual slides */
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transition: left 0.5s;
+    }
+    
+    /* Style for the hyperlinks */
+    .slide a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
 </style>
 <script>
@@ -264,6 +289,18 @@ function toggleImage() {
   img.classList.toggle("hidden");
 }
 
+// JavaScript code to handle the slideshow animation
+    var slides = document.querySelectorAll('.slide');
+    var currentIndex = 0;
+
+    function slideRightToLeft() {
+      slides[currentIndex].style.left = '-100%';
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].style.left = '0';
+    }
+
+    setInterval(slideRightToLeft, 2000); // Change slide every 2 seconds
+ 
 </script>
 
 </body>
