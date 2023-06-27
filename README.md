@@ -1,2 +1,2 @@
-# Gostreamtv.io
+# https//Gostreamtv.io
 The ultimate IPTV 
