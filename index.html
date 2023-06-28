@@ -1,32 +1,72 @@
-<html>
- <div class="top-style">
-  <div class="dropdown">
-  <button class="top-style-button" onclick="toggleDropdown()">Service</button>
-  <div id="dropdownContent" class="dropdown-content">
-    <a href="#" style="color: red;">Home</a>
-    <a href="contact.html" onclick="showPopup()" style="color: red;">Contact</a>
-
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <h3>Contact Form</h3>
-    <form>
-      <!-- Contact form inputs -->
-      <button type="submit">Submit</button>
-    </form>
-    <button onclick="closePopup()">Close</button>
-  </div>
-</div>
-
-    <a href="https://form.jotform.com/gostreamisp/GOSTREAMISP" style="color: red">Registration</a>
-  </div>
-</div>
-<p class="p-outside">|</p> <button
-class="top-style-button
- onclick="showsell()">Apk Links</button>
- </div>
- <br>
- <body>
-     
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Go Streamtv</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Go Streamtv</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">GOSTREAMTV</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">Iptv Services</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">List of channel</a></li>
+              <li><a href="#">Registration Forms</a></li>
+              <li><a href="#"></a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Network hacking</a></li>
+                  <li><a href="#">IPTV Reseller</a></li>
+                  <li><a href="#">Bills Method</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Other Services</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">Flyer Designing</a></li>
+              <li><a href="#">Network hacking</a></li>
+              <li><a href="#">Website Designer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
+<body>
+     <div>
+         <br>
+         <br>
+         <br>
    <h1 style="color: red;">Need Urgent help please contact on WhatsApp</h1>
    
    <a href="https://wa.me/message/LXB4NTXMXI77M1"><div id="myElement" class="blinking" style="color: blue;">Click here!</div></a>
@@ -49,7 +89,7 @@ class="top-style-button
  
 
 <button class="btn" onclick="toggleImage()">View Plans</button>
-  <img id="myImage" src="grim.jpg" alt="Image" class="hidden">
+  <img id="myImage" src="./img/grim.jpg" alt="Image" class="hidden">
   
   
    <hr color="red" size="5" width="100%">
@@ -57,15 +97,17 @@ class="top-style-button
  
      <h2>Offer's for you</h2>
      
-     <div class="slideshow-container"> <div class="slide"> <a href="#"> <img src="freetrial.jpg" alt="Image 1"> </a> </div> <div class="slide"> <a href="#"> <img src="Fullpackage.jpg" alt="Image 2"> </a> </div> <div class="slide"> <a href="#"> <img src="Contact.jpg" alt="Image 3"> </a> </div> </div>
+     <div class="slideshow-container"> <div class="slide"> <a href="#"> <img src=" img/freetrial.jpg" alt="Image 1"> </a> </div> <div class="slide"> <a href="#"> <img src="./img/Fullpackage.jpg" alt="Image 2"> </a> </div> <div class="slide"> <a href="#"> <img src="./img/Contact.jpg" alt="Image 3"> </a></h2></div> </div>
 
- 
+ <br>
+ <hr color="red" size="5" width="100%">
+  <br>
      
 <style>
     
     body {
- background-color: purple;
- width: 70%; height: 100px;
+ background-color: skyblue;
+ width: 100%; height: 100px;
  
 }
 *{
@@ -255,7 +297,7 @@ img {
 
 .slideshow-container {
       width: 100%;
-      height: 300px;
+      height: 350px;
       overflow: hidden;
       position: relative;
     }
@@ -267,14 +309,14 @@ img {
       position: absolute;
       top: 0;
       left: 100%;
-      transition: left 0.5s;
+      transition: left 0.7s;
     }
     
     /* Style for the hyperlinks */
     .slide a {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 110%;
     }
 
 </style>
@@ -299,9 +341,10 @@ function toggleImage() {
       slides[currentIndex].style.left = '0';
     }
 
-    setInterval(slideRightToLeft, 2000); // Change slide every 2 seconds
+    setInterval(slideRightToLeft, 2000); // Change slide every 4 seconds
+    
+    
  
 </script>
-
 </body>
 </html>
